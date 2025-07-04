@@ -1,0 +1,30 @@
+.game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    aspect-ratio: 1;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    opacity: 0.7;
+    cursor: default;
+}
